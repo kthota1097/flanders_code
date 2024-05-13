@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <div id="strength-indicator"></div>
+      </div>
+      <div class="button-container">
+        <button type="submit">Login</button>
+      </div>
+      <p id="error-message" class="error-message"></p>
+    </form>
+    <a href="javascript:void(0)" class="forgot-password" id="forgotPasswordLink">Forgot Password?</a>
+  </div>
+  <div id="forgotPasswordModal" class="modal">
+    <div class="modal-content">
+      <span id="modalCloseBtn" class="close">&times;</span>
+      <h2>Forgot Password</h2>
+      <!-- Add form to reset password -->
+      <form id="resetPasswordForm">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <button type="submit">Reset Password</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="./index.js" defer></script>
+</body>
+</html>
