@@ -7,3 +7,5 @@
 ### Steps to login
 username: admin
 password: password123
+## 
+link to clone in your local machine: https://github.com/kthota1097/flanders_code.git
